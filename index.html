@@ -1,57 +1,53 @@
 <!DOCTYPE html>
-
 <html lang="en">
-    <head>
-        <title>Tic Tac Toe</title>
-        <meta charset="UTF-8">
-        <script src="script.js" defer></script>
-        <link rel="stylesheet" href="styles.css">
-        <link rel="stylesheet" href="modern-normalize.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <div class="body">
-            <div class="title">
-                <span>tic.</span>
-                <span>tac.</span>
-                <span>toe.</span>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project: Tic Tac Toe</title>
+    <link rel="stylesheet" href="modern-normalize.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="title">
+        <span>tic.</span>
+        <span>tac.</span>
+        <span>toe.</span>
+   </div>
+    <div class="game-board">
+        <div class="score-container">
+            <div class="player-one">
+                <span>PLAYER 1</span>
+                <span id="player-one-score">0</span>
             </div>
-            <div class="game-board">
-                <div class="score-container">
-                    <div class="player-one">
-                        <span>PLAYER 1</span>
-                        <span id="player-one-score">0</span>
-                    </div>
-                    <div class="draw">
-                        <span>DRAW</span>
-                        <span id="draw-score">0</span>
-                    </div>
-                    <div class="player-two">
-                        <span>PLAYER 2</span>
-                        <span id="player-two-score">0</span>
-                    </div>
-                </div>
-                <div class="buttons-container">
-                    <div data-index="0"></div>
-                    <div data-index="1"></div>
-                    <div data-index="2"></div>
-                    <div data-index="3"></div>
-                    <div data-index="4"></div>
-                    <div data-index="5"></div>
-                    <div data-index="6"></div>
-                    <div data-index="7"></div>
-                    <div data-index="8"></div>
-
-                </div>
+            <div class="draw">
+                <span>DRAW</span>
+                <span id="draw-score">0</span>
             </div>
-            <div class="commentator-container">
-                <p id="commentator"></p>
-            </div>            
+            <div class="player-two">
+                <span>PLAYER 2</span>
+                <span id="player-two-score">0</span>
+            </div>
         </div>
+        <div class="buttons-container">
+            <div data-index="0"></div>
+            <div data-index="1"></div>
+            <div data-index="2"></div>
+            <div data-index="3"></div>
+            <div data-index="4"></div>
+            <div data-index="5"></div>
+            <div data-index="6"></div>
+            <div data-index="7"></div>
+            <div data-index="8"></div>
+        </div>
+        <div class="commentator-container">
+            <p id="commentator"></p>
+        </div>
+    </div>
 
-        <div class="action">
-            <button id="reset-board" class="button-53">Reset Board</button>
-            <button id="reset-scores" class="button-53">Reset Scores</button>
-        </div>
-    </body>
+    <div class="action">
+        <button id="reset-board" class="button-53">Reset Board</button>
+        <button id="reset-scores" class="button-53">Reset Scores</button>
+    </div>
+    <script src="script.js" defer></script>
+</body>
 </html>
