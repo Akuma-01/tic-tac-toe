@@ -40,8 +40,8 @@ body {
 
 .game-board {
     background-color: #26033d;
-    width: 450px;
-    height: 650px;
+    width: 500px;
+    height: 700px;
     border-radius: 25px;
     display: flex;
     flex-direction: column;
