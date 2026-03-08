@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,12 +8,31 @@
     <link rel="stylesheet" href="modern-normalize.css">
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
+    <!-- MODE SELECTION OVERLAY -->
+    <div id="mode-select">
+        <div class="mode-card">
+            <h2>Choose Game Mode</h2>
+            <p>Who is Player 2?</p>
+            <div class="mode-buttons">
+                <button class="mode-btn" id="btn-pvp">
+                    <span class="icon">👥</span>
+                    Player vs<br>Player
+                </button>
+                <button class="mode-btn highlight" id="btn-pva">
+                    <span class="icon">🤖</span>
+                    Player vs<br>AI
+                </button>
+            </div>
+        </div>
+    </div>
+
     <div class="title">
         <span>tic.</span>
         <span>tac.</span>
         <span>toe.</span>
-   </div>
+    </div>
     <div class="game-board">
         <div class="score-container">
             <div class="player-one">
@@ -24,7 +44,7 @@
                 <span id="draw-score">0</span>
             </div>
             <div class="player-two">
-                <span>PLAYER 2</span>
+                <span id="player-two-label">PLAYER 2</span>
                 <span id="player-two-score">0</span>
             </div>
         </div>
@@ -47,7 +67,9 @@
     <div class="action">
         <button id="reset-board" class="button-53">Reset Board</button>
         <button id="reset-scores" class="button-53">Reset Scores</button>
+        <button id="change-mode" class="button-53">Change Mode</button>
     </div>
-    <script src="script.js" defer></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
