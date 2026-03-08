@@ -17,16 +17,20 @@ body {
     flex-flow: column nowrap;
     font-size: 10rem;
     font-weight: 700;
+    line-height: 1;
+    /* tighter line height so stacking is denser */
 }
 
 .title>span:nth-child(1) {
     color: #70cffc;
-    top: 380px;
+    top: 440px;
+    /* was 320px — pushes it further down into the others */
 }
 
 .title>span:nth-child(2) {
     color: #e0bf43;
-    top: 190px;
+    top: 220px;
+    /* was 160px */
     z-index: 1;
 }
 
@@ -216,7 +220,6 @@ body {
     .button-53 {
         padding: .6rem 1.2rem;
     }
-
 }
 
 @keyframes pop {
@@ -246,13 +249,15 @@ body {
 /* ── Mode Selection Overlay ── */
 #mode-select {
     position: fixed;
-    inset: 0;
-    background: rgba(26, 3, 41, 0.92);
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(26, 3, 41, 0.95);
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 100;
-    backdrop-filter: blur(4px);
+    z-index: 9999;
 }
 
 #mode-select.hidden {
